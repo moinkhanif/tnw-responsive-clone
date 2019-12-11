@@ -1,4 +1,10 @@
+
 /* Mobile Screen -Principal layout*/
+main{
+  margin-top: 48px;
+
+}
+
 .top-hdr-nav,
 .bot-hdr-nav nav{
     display: none;
@@ -21,6 +27,7 @@
   height: 48px;
   width: 100%;
   position: fixed;
+  top: 0;
 }
 
 .search,
@@ -50,5 +57,9 @@
 }
 
 /* Cover Section */
+.cover{
+  display: grid;
+  grid-auto-rows: 227px;
 
+}
 
