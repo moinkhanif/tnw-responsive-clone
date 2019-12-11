@@ -3,3 +3,48 @@
 .bot-hdr-nav nav{
     display: none;
 }
+
+.logo {
+  background: linear-gradient(to bottom right,#c09,#f42 85%);
+  width: 90px;
+  height: 100%;
+}
+
+.logo > img {
+  margin: 15px;
+}
+
+.bot-hdr-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  position: fixed;
+}
+
+.search,
+.burger {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
+  width: 40px;
+  border: none;
+  border-left: 1px solid rgb(236, 236, 236);
+  background-color: white;
+  
+}
+
+.search {
+  background-image: url("../img/search.svg");
+}
+
+.burger {
+  background-image: url("../img/burger-menu.svg");
+}
+
+.bot-hdr-nav-btn {
+  height: 100%;
+  display: flex;
+}
