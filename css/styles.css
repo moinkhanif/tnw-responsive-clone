@@ -1,0 +1,5 @@
+/* Mobile Screen -Principal layout*/
+.top-hdr-nav,
+.bot-hdr-nav nav{
+    display: none;
+}
