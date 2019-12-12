@@ -110,8 +110,7 @@ main{
   color: #c2c2c2;
   text-decoration: none;
 }
-.time-ago,
-.shares {
+.inline-icon {
   vertical-align: text-top;
   display: inline-block;
   background-size: cover;
@@ -185,4 +184,20 @@ main{
 
 .section2 ul li {
   margin-top: 11px;
+}
+
+
+.tag{
+  background-image: url("../img/tags.svg");
+}
+
+.brief{
+  background-image: url("../img/brief.svg");
+}
+
+.stock-box img{
+  float: left;
+}
+.stock-value{
+  clear: left;
 }
