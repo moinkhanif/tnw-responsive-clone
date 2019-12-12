@@ -175,7 +175,8 @@ main{
 }
 
 .section1 a,
-.stock-box a {
+.stock-box a,
+.section3 a {
   text-decoration: none;
   color: black;
 }
@@ -252,7 +253,8 @@ main{
   border-top: 1px solid rgba(255,68,34,.25)  ;
 }
 
-.stock-box > div:last-child a{
+.stock-box > div:last-child a,
+.section3 a{
   color: #555;
 }
 
@@ -277,6 +279,10 @@ main{
   display: grid;
 }
 
+.section3 > div {
+  padding: 8px;
+}
+
 .section3 article {
   height: 392px;
 }
@@ -294,14 +300,17 @@ main{
 }
 .section3-latest {
   overflow: hidden;
-  padding: 10px;
   background-color: rgba(255,68,34,.08);
 
 }
 .section3-latest h5{
   font-size: .8em;
   color: #f42;
-  margin-bottom: 5px;
+  padding: 10px 0 0 10px;
+}
+
+.section3-latest h4 {
+  padding-left: 10px;
 }
 
 .section3-latest a{
@@ -309,4 +318,18 @@ main{
   color: #f42;
   font-weight: 700;
   line-height: 1.3em;
+}
+
+.section3 li {
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
+.section3 li::before {
+  content: "• ";
+  color: red;
+}
+
+.section3 a {
+  font-size: 12px;
 }
