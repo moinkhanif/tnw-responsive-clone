@@ -2,6 +2,7 @@
 /* Mobile Screen -Principal layout*/
 body{
   background-color: rgb(228, 225, 225);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
@@ -107,12 +108,33 @@ main{
 .cover-meta a{
   font-size: .8em;
   color: #c2c2c2;
+  text-decoration: none;
+}
+.time-ago,
+.shares {
+  vertical-align: text-top;
+  display: inline-block;
+  background-size: cover;
+  height: 16px;
+  width: 16px;
+  background-position: center;
 }
 .time-ago{
-  background: url("../img/clock.svg");
-  background-size: 16px 16px;
-
+  background-image: url("../img/clock.svg");
 }
 .shares{
-  background: url("../img/share.svg");
+  background-image: url("../img/share.svg");
+  margin: 0 5px;
+}
+
+.latest-news article {
+  display: flex;
+  height: 75px;
+}
+
+.latest-news article > a {
+  width: 134px;
+  height: 75px;
+  background-image: url("../img/latest-news1.jpg");
+  background-size: 75px 75px;
 }
