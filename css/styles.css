@@ -195,9 +195,54 @@ main{
   background-image: url("../img/brief.svg");
 }
 
+.section2 > div {
+  margin-bottom: 24px;
+}
+
+.stock-box {
+  padding: 8px;
+}
+
 .stock-box img{
   float: left;
+  width: 60px;
+  height: 60px;
+  margin: 10.6px;
 }
-.stock-value{
+.stock-cat{
   clear: left;
+  padding: 16px;
+}
+
+.stock-cat > * {
+  margin-bottom: 0.5em;
+}
+
+.stock-cat span {
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.stock-box > div:nth-child(1) {
+  height: 43px;
+  background-color: #f42;
+}
+.stock-box > div:nth-child(2) {
+  height: 60px;
+  background-color: rgba(255,68,34,.08);
+}
+
+.stock-box > div:last-child,
+.stock-box > div:nth-last-child(2) {
+  background-color: rgba(255,68,34,.04);
+}
+
+.stock-box > div:nth-last-child(2) {
+  height: 89px;
+}
+
+.stock-box > div:last-child {
+  height: 44px;
+  font-size: 12px;
+  padding: 10px 16px 16px;
 }
