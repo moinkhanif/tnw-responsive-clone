@@ -69,7 +69,8 @@ main{
   margin: 10px;
 }
 
-.cover > article {
+.cover > article,
+.section3 article {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -228,7 +229,7 @@ main{
   background-color: #f42;
 }
 .stock-box > div:nth-child(2) {
-  height: 60px;
+  height: 39px;
   background-color: rgba(255,68,34,.08);
 }
 
@@ -237,12 +238,31 @@ main{
   background-color: rgba(255,68,34,.04);
 }
 
-.stock-box > div:nth-last-child(2) {
-  height: 89px;
+.stock-box > div:nth-child(2) {
+  height: 59px;
+  padding-top: 11px;
 }
 
 .stock-box > div:last-child {
   height: 44px;
   font-size: 12px;
   padding: 10px 16px 16px;
+  border-top: 1px solid rgba(255,68,34,.25)  ;
+}
+
+.stock-box h3{
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 43px;
+}
+.stock-box h4{
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+.stock-box h5{
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.5em;
 }
