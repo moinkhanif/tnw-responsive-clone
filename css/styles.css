@@ -1,7 +1,11 @@
 
 /* Mobile Screen -Principal layout*/
+body{
+  background-color: rgb(228, 225, 225);
+}
+
 main{
-  margin-top: 48px;
+  margin-top: 58px;
 
 }
 
@@ -28,6 +32,7 @@ main{
   width: 100%;
   position: fixed;
   top: 0;
+  background-color: #ffffff;
 }
 
 .search,
@@ -59,8 +64,8 @@ main{
 /* Cover Section */
 .cover{
   display: grid;
-  grid-auto-rows: 227px;
-
+  grid-auto-rows: 263px;
+  margin: 10px;
 }
 
 .cover > article {
@@ -73,6 +78,7 @@ main{
   justify-content: flex-end;
   color: white;
   padding: 20px;
+  margin-bottom: 10px;
 }
 
 .cover-article1 {
@@ -85,4 +91,28 @@ main{
 
 .cover-article3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/article\ 3.jpg");
+}
+
+.cover-cat{
+  margin-bottom: 10px;
+  font-size: .9em;
+}
+
+.cover-title{
+  margin-bottom: 10px; 
+  font-weight: bold;
+  font-size: 1.3em; 
+}
+.cover-meta,
+.cover-meta a{
+  font-size: .8em;
+  color: #c2c2c2;
+}
+.time-ago{
+  background: url("../img/clock.svg");
+  background-size: 16px 16px;
+
+}
+.shares{
+  background: url("../img/share.svg");
 }
