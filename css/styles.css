@@ -141,7 +141,7 @@ main{
   color: #f42;
 }
 
-.section-wrapper article {
+.section1 article {
   display: flex;
   height: 75px;
   margin-bottom: 10px;
@@ -174,13 +174,15 @@ main{
   color: #aaa;
 }
 
-.section-wrapper a{
+.section1 a,
+.stock-box a {
   text-decoration: none;
   color: black;
 }
 
 .section2 ul a {
   color: #f42;
+  text-decoration: none;
 }
 
 .section2 ul li {
@@ -250,6 +252,10 @@ main{
   border-top: 1px solid rgba(255,68,34,.25)  ;
 }
 
+.stock-box > div:last-child a{
+  color: #555;
+}
+
 .stock-box h3{
   color: #fff;
   font-size: 1.2em;
@@ -265,4 +271,16 @@ main{
   font-size: 11px;
   color: rgba(0, 0, 0, 0.5);
   line-height: 1.5em;
+}
+
+.section3 {
+  display: grid;
+}
+
+.section3 article {
+  height: 392px;
+}
+
+.section3-article1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-1.jpg");
 }
