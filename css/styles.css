@@ -437,12 +437,14 @@ footer nav ul{
   background-position: -576px -576px;
 }
 
-.footer-links li {
+.footer-links li,
+.bot-hdr-nav li {
   text-transform: uppercase;
   margin: 0 4px;
 }
 
-.footer-links a {
+.footer-links a,
+.bot-hdr-nav a{
   text-decoration: none;
   color: #aaa;
   font-size: 12px;
@@ -486,6 +488,28 @@ footer span{
   }
   .top-hdr-nav ul {
     display: flex;
+    justify-content: space-evenly
+  }
+  .parent-link{
+    position: relative;
+  }
+  .parent-link ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .top-hdr-nav{
+    background-color: #131313;
+    height: 100%;
+  }
+
+  .top-hdr-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
   }
   
 }
