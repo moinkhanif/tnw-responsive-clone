@@ -11,7 +11,8 @@ main{
 }
 
 .top-hdr-nav,
-.bot-hdr-nav nav{
+.bot-hdr-nav nav,
+.top-hdr-right-nav {
     display: none;
 }
 
@@ -19,6 +20,7 @@ main{
   background: linear-gradient(to bottom right,#c09,#f42 85%);
   width: 90px;
   height: 100%;
+  float: left;
 }
 
 .logo > img {
@@ -31,7 +33,7 @@ main{
   align-items: center;
   height: 48px;
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   background-color: #ffffff;
 }
@@ -475,5 +477,21 @@ footer span{
   .bot-hdr-nav nav{
     display: block;
   }
+  .bot-hdr-nav ul,
+  .bot-hdr-nav {
+    display: flex;
+  }
+  .bot-hdr-nav {
+    justify-content: space-between;
+  }
+  .top-hdr-nav ul {
+    display: flex;
+  }
+  
+}
 
+@media screen and (min-width:755px) {
+  .top-hdr-right-nav {
+    display: block;
+  }
 }
