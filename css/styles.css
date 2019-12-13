@@ -373,6 +373,7 @@ footer nav{
   flex-direction: column;
   height: 160px;
   align-items: center;
+  justify-content: center;
 }
 
 footer div{
@@ -386,18 +387,63 @@ footer nav ul{
   max-width: 1192px;
   
 }
+.social-links {
+  margin-bottom: 21px;
+}
+
 .social-links li{
   list-style-type: none;
-  height: 100%;
-  width: 100%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  padding: 10px;
+  margin: 0 3px;
 }
 .social-links a{
   display: block;
+  margin: auto;
   background-image: url("../img/sprites2.png");
   background-repeat: no-repeat;
   height: 16px;
   width: 16px;
+  text-align: center;
 }
 .face-icon{
   background-position: -272px -272px;
+}
+
+.twit-icon {
+  background-position: -1024px -1024px;
+}
+
+.youtube-icon {
+  background-position: -1280px -1280px;
+}
+
+.insta-icon {
+ background-position: -416px -416px;
+}
+
+.pint-icon {
+  background-position: -672px -672px;
+}
+
+.sfeed-icon {
+  background-position: -816px -816px;
+}
+
+.news-icon {
+  background-position: -576px -576px;
+}
+
+.footer-links li {
+  text-transform: uppercase;
+  margin: 0 4px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 12px;
 }
