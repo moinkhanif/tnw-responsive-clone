@@ -467,4 +467,13 @@ footer span{
   color: red;
 }
 
+/* 690 and up version */
 
+@media screen and (min-width:690px)
+{
+  .top-hdr-nav,
+  .bot-hdr-nav nav{
+    display: block;
+  }
+
+}
