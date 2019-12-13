@@ -287,10 +287,6 @@ main{
   height: 392px;
 }
 
-.section3-article1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-1.jpg");
-}
-
 .section3 article{
   margin-bottom: 3px;
 }
@@ -332,4 +328,29 @@ main{
 
 .section3 a {
   font-size: 12px;
+}
+
+.section3-article1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-1.jpg");
+}
+.section3-article2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-2.jpg");
+}
+.section3-article3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-3.jpg");
+}
+.section3-article4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-4.jpg");
+}
+.section3-article5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-5.jpg");
+}
+.section3-article6 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-6.jpg");
+}
+.section3-article7 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-7.jpg");
+}
+.section3-article8 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-8.jpg");
 }
