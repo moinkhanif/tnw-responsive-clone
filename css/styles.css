@@ -141,7 +141,8 @@ main{
   color: #f42;
 }
 
-.section1 article {
+.section1 article,
+.section4 article {
   display: flex;
   height: 75px;
   margin-bottom: 10px;
@@ -176,12 +177,14 @@ main{
 
 .section1 a,
 .stock-box a,
-.section3 a {
+.section3 a,
+.section4 a {
   text-decoration: none;
   color: black;
 }
 
-.section2 ul a {
+.section2 ul a,
+.section4-top > a {
   color: #f42;
   text-decoration: none;
 }
@@ -326,7 +329,8 @@ main{
   color: red;
 }
 
-.section3 a {
+.section3 a,
+.section4-top > a {
   font-size: 12px;
 }
 
@@ -353,4 +357,12 @@ main{
 }
 .section3-article8 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgb(0, 0, 0,0.9) 80%), url("../img/section3-8.jpg");
+}
+
+.section4-top > a {
+  float: right;
+}
+
+.regular-price {
+  text-decoration: line-through;
 }
