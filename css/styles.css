@@ -366,3 +366,36 @@ main{
 .regular-price {
   text-decoration: line-through;
 }
+
+footer nav{
+  background-color:#131313;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  align-items: center;
+}
+
+footer div{
+  background-color: black;
+  height: 121px;
+}
+
+footer nav ul{
+  display:flex;
+  height: 45px;
+  max-width: 1192px;
+  
+}
+.social-links li{
+  list-style-type: none;
+}
+.social-links a{
+  display: block;
+  background-image: url("../img/icons-sprite.svg");
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+.face-icon{
+  background-position: -272px -272px;
+}
