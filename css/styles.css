@@ -39,11 +39,14 @@ header{
   background: linear-gradient(to bottom right,#c09,#f42 85%);
   width: 110px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
 }
 
 .logo > img {
   margin: 12px;
+  width: 84%;
 }
 
 .bot-hdr-nav {
