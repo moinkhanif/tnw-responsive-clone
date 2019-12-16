@@ -9,7 +9,8 @@ body{
 .bot-hdr-nav nav,
 .top-hdr-right-nav,
 .parent-link ul,
-.parent-link ul li {
+.parent-link ul li,
+.stock-box:last-child {
     display: none;
 }
 
@@ -21,16 +22,9 @@ header{
   width: 100%;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.nav-container div {
+  padding-left: 15px;
 }
-
-.on-sticky{
-  margin-left: 110px;
-}
-
 .logo {
   background: linear-gradient(to bottom right,#c09,#f42 85%);
   width: 110px;
@@ -51,7 +45,6 @@ header{
   align-items: center;
   height: 48px;
   width: 100%;
-  /* position: fixed; */
   top: 0;
   background-color: #ffffff;
 }
@@ -289,7 +282,7 @@ header{
   line-height: 43px;
 }
 .stock-box h4{
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   line-height: 1.5em;
 }
@@ -556,6 +549,9 @@ footer span::after {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
   }
+  .cover-article1 .cover-title{
+    font-size: 2em;
+  }
   .cover-article1 {
     grid-column: span 2;
     grid-row: span 2;
@@ -625,9 +621,22 @@ footer span::after {
   .top-hdr-right-nav {
     display: block;
   }
+  .cover{
+    height:55vh;
+  }
 }
 
 @media screen and (min-width:1024px){
+  .cover{
+    height:70vh;
+  }
+  .cover-article1 .cover-title{
+    font-size: 3em;
+  }
+  .logo{
+    display: none;
+  }
+
   .section3 {
     grid-template-columns: repeat(3,1fr);
   }
@@ -635,4 +644,27 @@ footer span::after {
     display: flex;
     justify-content: space-between;
   }
+  .stock-box:last-child{
+    display: block;
+  }
+  .section4-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.on-sticky{
+  margin-left: 110px;
+}
+
+.on-sticky-logo{
+  display: flex;
+  width: 110px;
+  position: fixed;
+  top:0;
 }
