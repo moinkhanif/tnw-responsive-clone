@@ -9,6 +9,11 @@ body {
   padding: 8px;
 }
 
+.section3 li {
+  padding: 5px 0;
+  border-bottom: 1px solid rgb(202, 202, 202);
+}
+
 .top-hdr-nav,
 .bot-hdr-nav nav,
 .top-hdr-right-nav,
@@ -189,9 +194,20 @@ header {
   padding: 8px;
 }
 
+.section3-latest a {
+  text-decoration: none;
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
 .section3 a,
-.stock-box > div:last-child a {
-  color: #555;
+.section4-top > a {
+  font-size: 12px;
+}
+
+.section4-top > a {
+  float: right;
 }
 
 .section4-top > a,
@@ -204,6 +220,11 @@ header {
   display: block;
   height: 75px;
   margin-right: 10px;
+}
+
+.section3 a,
+.stock-box > div:last-child a {
+  color: #555;
 }
 
 .section-wrapper img {
@@ -342,26 +363,9 @@ header {
   padding: 10px 0 0 10px;
 }
 
-.section3-latest a {
-  text-decoration: none;
-  color: #f42;
-  font-weight: 700;
-  line-height: 1.3em;
-}
-
-.section3 li {
-  padding: 5px 0;
-  border-bottom: 1px solid rgb(202, 202, 202);
-}
-
 .section3 li::before {
   content: "• ";
   color: red;
-}
-
-.section3 a,
-.section4-top > a {
-  font-size: 12px;
 }
 
 .section3-article1 {
@@ -394,10 +398,6 @@ header {
 
 .section3-article8 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgb(0, 0, 0, 0.9) 80%), url("../img/section3-8.jpg");
-}
-
-.section4-top > a {
-  float: right;
 }
 
 .regular-price {
