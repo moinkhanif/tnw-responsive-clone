@@ -7,63 +7,66 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
+
   <title>TNW Responsive Clone</title>
 </head>
 
 <body>
   <header>
-    <div class="logo">
+    <div class="logo" id="logo">
       <img src="./img/tnw.svg" alt="top logo">
     </div>
-    <div class="top-hdr-nav">
-      <nav>
-        <ul>
-          <li><a href="#">News</a></li>
-          <li class="parent-link"><a href="#">Events ▾</a>
-            <ul>
-              <li><a href="#">Bowlr 2019</a></li>
-              <li><a href="#">TNW2020</a></li>
-            </ul>            
-          </li>
-          <li class="parent-link"><a href="#">Business ▾</a>
-            <ul>
-              <li><a href="#">Index</a></li>
-              <li><a href="#">TNW X</a></li>
-            </ul>
-          </li>
-          <li><a href="#">AMAs</a></li>
-          <li><a href="#">Spaces</a></li>
-          <li><a href="#">Terms and Conditions</a></li>
-        </ul>
-      </nav>
-      <nav class="top-hdr-right-nav">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Advertise</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="bot-hdr-nav">
-      <div>
-        
-        <nav>
+    <div class="nav-container">
+      <div class="top-hdr-nav">
+        <nav class="top-hdr-left-nav">
           <ul>
-            <li><a href="#">Latest</a></li>
-            <li><a href="#">Hard Fork</a></li>
-            <li><a href="#">Plugged</a></li>
-            <li><a href="#">Fundamentals</a></li>
-            <li><a href="#">Work 2030</a></li>
+            <li><a href="#">News</a></li>
+            <li class="parent-link"><a href="#">Events ▾</a>
+              <ul>
+                <li><a href="#">Bowlr 2019</a></li>
+                <li><a href="#">TNW2020</a></li>
+              </ul>            
+            </li>
+            <li class="parent-link"><a href="#">Business ▾</a>
+              <ul>
+                <li><a href="#">Index</a></li>
+                <li><a href="#">TNW X</a></li>
+              </ul>
+            </li>
+            <li><a href="#">AMAs</a></li>
+            <li><a href="#">Spaces</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+          </ul>
+        </nav>
+        <nav class="top-hdr-right-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
-      <div class="bot-hdr-nav-btn">
-        <button class="search"></button>
-        <button class="burger"></button>
+      <div class="bot-hdr-nav" id="bot-hdr-nav">
+        <div> 
+          <nav>
+            <ul id="nav-ul">
+              <li><a href="#">Latest</a></li>
+              <li><a href="#">Hard Fork</a></li>
+              <li><a href="#">Plugged</a></li>
+              <li><a href="#">Fundamentals</a></li>
+              <li><a href="#">Work 2030</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="bot-hdr-nav-btn">
+          <button class="search"></button>
+          <button class="burger"></button>
+        </div>
       </div>
     </div>
+
   </header>
   <main>
     <section class="cover">
@@ -577,6 +580,33 @@
         Powered by <img class="stack-logo" src="/img/stackpath.svg" alt="Stackpath"></p>
     </div>
   </footer>
+  <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+  
+    // Get the navbar
+    var navbar = document.getElementById("bot-hdr-nav");
+    var logo = document.getElementById("logo");
+    var nav_ul = document.getElementById("nav-ul")
+  
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+  
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        logo.classList.add("sticky");
+        nav_ul.classList.add("on-sticky");
+        
+      } else {
+        navbar.classList.remove("sticky");
+        logo.classList.remove("sticky");
+        nav_ul.classList.remove("on-sticky");
+      }
+    } 
+  
+  </script>
 </body>
 
 </html>
