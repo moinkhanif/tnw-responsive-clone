@@ -5,10 +5,6 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-  margin-top: 58px;
-}
-
 .top-hdr-nav,
 .bot-hdr-nav nav,
 .top-hdr-right-nav,
@@ -89,6 +85,7 @@ header{
 /* Cover Section */
 .cover{
   display: grid;
+  grid-gap: 10px;
   grid-auto-rows: 30vh;
   margin: 10px;
 }
@@ -104,7 +101,7 @@ header{
   justify-content: flex-end;
   color: white;
   padding: 20px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .cover-article1 {
@@ -547,7 +544,43 @@ footer span{
   } 
 }
 
-@media screen and (min-width:755px) {
+@media screen and (min-width:770px) {
+ 
+  .cover {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  .cover-article1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .section1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 200px;
+    grid-template-rows: 50px;
+    grid-gap: 15px;
+  }
+  .section1 > h3 {
+    grid-column: span 3;
+    grid-row: 20px;
+  }
+  .section1 > article {
+    flex-direction: column;
+  }
+  .section1 img {
+    width: 100%;
+    height: 121px;
+  }
+  .section-wrapper article > a {
+    height: 120px;
+  }
+  .section-wrapper article  h4 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width:827px){
   .top-hdr-right-nav {
     display: block;
   }
