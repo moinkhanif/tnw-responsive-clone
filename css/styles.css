@@ -560,6 +560,7 @@ footer span{
     grid-auto-rows: 200px;
     grid-template-rows: 50px;
     grid-gap: 15px;
+    grid-row-gap: 25px;
   }
   .section1 > h3 {
     grid-column: span 3;
@@ -577,6 +578,25 @@ footer span{
   }
   .section-wrapper article  h4 {
     margin-top: 10px;
+  }
+
+  .section2 ul{
+    display: flex;
+  }
+
+  .section2 ul li::after{
+    content: "|";
+    margin: 0 10px;
+    color: #f42;
+  }
+  .section2 ul li:last-child::after{
+    display: none;
+  }
+  .section2-boxes{
+    display: flex;
+  }
+  .stock-box{
+    flex: 1;
   }
 }
 
