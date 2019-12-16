@@ -280,7 +280,7 @@ header {
   min-height: 44px;
   font-size: 12px;
   padding: 10px 16px 16px;
-  border-top: 1px solid rgba(255,68,34,0.25);
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
 }
 
 .stock-box > div:last-child a,
@@ -705,7 +705,6 @@ footer span::after {
   .cover-logo {
     display: block;
   }
-
 
   .cover-logo img,
   .cover-logo > div {
