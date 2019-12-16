@@ -5,6 +5,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.stock-box {
+  padding: 8px;
+}
+
 .top-hdr-nav,
 .bot-hdr-nav nav,
 .top-hdr-right-nav,
@@ -173,6 +177,20 @@ header {
   margin-bottom: 10px;
 }
 
+.section1 a,
+.stock-box a,
+.section3 a,
+.section4 a {
+  text-decoration: none;
+  color: black;
+}
+
+.section4-top > a,
+.section2 ul a {
+  color: #f42;
+  text-decoration: none;
+}
+
 .section-wrapper article > a {
   display: block;
   height: 75px;
@@ -201,20 +219,6 @@ header {
   color: #aaa;
 }
 
-.section1 a,
-.stock-box a,
-.section3 a,
-.section4 a {
-  text-decoration: none;
-  color: black;
-}
-
-.section2 ul a,
-.section4-top > a {
-  color: #f42;
-  text-decoration: none;
-}
-
 .section2 ul li {
   margin-top: 11px;
 }
@@ -229,10 +233,6 @@ header {
 
 .section2 > div {
   margin-bottom: 24px;
-}
-
-.stock-box {
-  padding: 8px;
 }
 
 .stock-box img {
